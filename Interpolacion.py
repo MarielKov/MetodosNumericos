@@ -1,18 +1,26 @@
 # Interpolacion de Lagrange
 # divisoresL solo para mostrar valores
+from random import randint
 import numpy as np
 import sympy as sym
 import matplotlib.pyplot as plt
 
-# INGRESO , Datos de prueba
-#xi = np.array([0, 1 ,2 ,3 ])
-#fi = np.array([1 ,1, 1 ,2 ])
+def lista_random():
 
-xi = np.array([1 ,2, 4, 5])
-fi = np.array([-2 , 1, 13, 22 ])
+    lista = set()
+    print("Se usa un set para impedir numeros repetidos y un ciclo que para al recopilar 20 numeros distintos")
+    while (len(lista) != 20):
 
-#xi = np.array([0 ,2, 8 ,15 ])
-#fi = np.array([3, 3, 3 ,3 ])
+        num = randint(-20,20)
+        lista.add(num)
+   
+    return lista     
+
+xi = list(lista_random())
+fi = list(lista_random())
+
+print(xi)
+print(fi)
 
 # PROCEDIMIENTO
 # Polinomio de Lagrange

@@ -14,7 +14,6 @@ b = np.array([[5],[3],[-2]], float)
 
 x = np.array([[0],[0],[0]],float)
 
-
 print ("\nMatriz A:\n", A)
 
 print ("\nVector b:\n", b)
